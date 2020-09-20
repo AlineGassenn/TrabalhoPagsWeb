@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contato.css" />
+</head>
+
+<body>
+    <input type="checkbox" id="bt_menu" />
+    <label id="menu-button" for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Faun</a>
+                <ul class="sub-menu">
+                    <li><a href="../index.html#f1">História</a></li>
+                    <li><a href="../index.html#f2">Etimologia</a></li>
+                    <li><a href="../index.html#f3">Composição</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="albuns.html">Álbuns</a>
+                <ul class="sub-menu">
+                    <li><a href="albuns.html#a1">2019-2016</a></li>
+                    <li><a href="albuns.html#a2">2014-2011</a></li>
+                    <li><a href="albuns.html#a3">2009-2007</a></li>
+                    <li><a href="albuns.html#a4">2005-2002</a></li>
+                    <li><a href="albuns.html#a5">Músicas</a></li>
+                </ul>
+            </li>
+            <li><a href="letras.html">Letras</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+                <a href="galeria.html">Galeria</a>
+                <ul class="sub-menu">
+                    <li><a href="galeria.html#g1">Integrantes</a></li>
+                    <li><a href="galeria.html#g2">Ex-Integrantes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <div class="texto"><br>
+                <p>Não perca nenhuma novidade e fique sempre atualizado!</p>
+                <br>
+                <p>Assine a Newsletter FAUN aqui e você receberá um e-mail nosso a cada dois meses com as últimas notícias,
+                    fotos, ofertas especiais e, claro, com histórias escandalosas e às vezes íntimas do mundo FAUN.</p>
+            </div>
+        </aside>
+
+        <!--Formulário-->
+        <form action="#" method="post" onsubmit="alert('Os dados foram enviados com sucesso')">
+            <h2>Contato</h2><br>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required style="width: 20em" value="">
+                </div>
+
+                <div id="sexo"><br>
+                    <label>Sexo</label><br>
+                    <label>
+                        <input type="radio" name="sexo" value="masculino"> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" value="feminino"> Feminino
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required style="width: 20em" value="">
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea rows="6" style="width: 20em" id="mensagem" name="mensagem" required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label>
+                        <input type="checkbox" name="newsletter" value="1"> Gostaria de receber a Newsletter da banda
+                    </label>
+                </div><br>
+
+                <button class="botao" type="submit" name="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>

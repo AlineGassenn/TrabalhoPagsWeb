@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+}
+
+main {
+    margin-top: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto {
+    width: 30%;
+    text-align: justify;
+    font-family: 'Sriracha', cursive;
+    font-size: 16pt; 
+}
+
+aside{
+    margin:auto
+}
+
+h2, label, input{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+label, input, textarea{
+    font-size: 16px;
+}
+
+fieldset{
+    border: 0;
+}
+
+#sexo{
+    color: black;
+    display: inline;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.campo label {
+    color: black;
+    display: block;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.botao {
+    cursor: pointer;
+    background: black;
+    color: darkgoldenrod;
+    font-size: 15pt;
+    padding: 10px;
+    text-align: center;
+    border:0;
+}
+
+.botao:hover {
+    background: darkgoldenrod;
+    color:black;
+    font-weight: bold;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        display: block;
+    }
+
+    .texto{
+        width: 80%;
+        font-size: 14px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    label, input, textarea{
+        font-size: 12px;
+    }
+
+    form{
+        width: 80%;
+        margin-left: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main{
+        display: block;
+    }
+
+    .texto{
+        width: 80%;
+        font-size: 16px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    form{
+        width: 80%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 768px) {
+    main{
+        display: block;
+    }
+
+    .texto{
+        width: 80%;
+        font-size: 18px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    form{
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main {
+        margin-top: 10%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: space-around;
+    }
+  
+    .texto {
+        text-align: center;
+        font-family: 'Sriracha', cursive;
+        font-size: 14px; 
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .texto {
+        text-align: justify;
+        font-family: 'Sriracha', cursive;
+        font-size: 14pt; 
+    }
+}

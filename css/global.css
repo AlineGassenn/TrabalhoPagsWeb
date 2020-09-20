@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu-button{
+    position: absolute;
+    left: 48%;
+    font-size: 23px;
+}
+
+.menu {
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    font-family: 'Grandstander', cursive;
+    font-size: 20px;
+    position: fixed;
+    top: 0px;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+    justify-content: space-around;
+}
+
+.menu ul li {
+    width: 20%;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: darkgoldenrod;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+    width: inherit;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+    width: auto;
+}
+
+.menu ul ul li a {
+    background-color: #1C1C1C;
+}
+
+label[for=”bt_menu”] {
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for=”bt_menu”] {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    label[for=”bt_menu”] {
+        display: block;
+    }
+
+    #bt_menu:checked~.menu {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-top: 35.5px;
+        margin-left: -100%;
+        transition: all .2s;
+    }
+
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.4s;
+        height: auto;
+        max-height: 200px;
+        visibility: visible;
+    }
+}
+
+/*Rodapé*/
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row a {
+    color: black;
+}
+
+.flex-row p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.rodape {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    background-color: black;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {   
+    .flex-row p{
+        font-size: 10px;
+    }
+
+    .flex-row img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .footer p{
+        font-size: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .flex-row p{
+        font-size: 14px;
+    }
+
+    .flex-row img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer p{
+        font-size: 12px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .flex-row p{
+        font-size: 16px;
+    }
+
+    .flex-row img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer p{
+        font-size: 14px;
+    }      
+}
+
+@media only screen and (min-width: 768px) {
+    .flex-row p{
+        font-size: 14px;
+    }
+
+    .flex-row img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer p{
+        font-size: 12px;
+    }  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .flex-row p{
+        font-size: 18px;
+    }
+    
+    .flex-row img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer p{
+        font-size: 14px;
+    }  
+}

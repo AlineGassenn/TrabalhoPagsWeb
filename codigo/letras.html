@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/letras.css" />
+    <title>Letra</title>
+</head>
+
+<body>
+    <input type="checkbox" id="bt_menu" />
+    <label id="menu-button" for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Faun</a>
+                <ul class="sub-menu">
+                    <li><a href="../index.html#f1">História</a></li>
+                    <li><a href="../index.html#f2">Etimologia</a></li>
+                    <li><a href="../index.html#f3">Composição</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="albuns.html">Álbuns</a>
+                <ul class="sub-menu">
+                    <li><a href="albuns.html#a1">2019-2016</a></li>
+                    <li><a href="albuns.html#a2">2014-2011</a></li>
+                    <li><a href="albuns.html#a3">2009-2007</a></li>
+                    <li><a href="albuns.html#a4">2005-2002</a></li>
+                    <li><a href="albuns.html#a5">Músicas</a></li>
+                </ul>
+            </li>
+            <li><a href="letras.html">Letras</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+                <a href="galeria.html">Galeria</a>
+                <ul class="sub-menu">
+                    <li><a href="galeria.html#g1">Integrantes</a></li>
+                    <li><a href="galeria.html#g2">Ex-Integrantes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <br><br><br>
+
+    <!--Duas divs para poder colocar uma imagem de fundo com opacidade-->
+    <div class="corpo-texto">
+        <div class="form-title"><br>
+            <h1>Letras</h1><br>
+            <p>Para gerar uma letra da Banda Faun basta informar o nome na caixa de texto.</p>
+        </div>
+    
+        <div class="dados">
+            
+                <fieldset><br>
+                    <label for="musica">Música:</label>
+                    <input type="text" id="musica" name="musica"><br><br>
+                </fieldset>
+                <!--Java Script-->
+                <div class="botao"><br>
+                    <button onclick="pegavalores()">
+                    Buscar
+                    </button>
+                </div>
+             
+        </div><br><br>
+
+            <h2>Letra:</h2><br>
+            <pre id="letra">
+                <!--Aqui a letra será gerada-->
+            </pre><br><br>
+
+    <!--Arquivo JS-->    
+    <script src="../js/script.js"></script>
+    <br><br>
+    </div>
+
+    <footer class="footer">
+        <p>Todos os Direitos Reservados@2020</p>
+    </footer>
+
+</body>
+</html>
